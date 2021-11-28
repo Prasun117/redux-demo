@@ -17,11 +17,11 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <CounterComponent
+      {/* <CounterComponent
         counter={counter}
         increment={handleIncrement}
         decrement={handleDecrement}
-      />
+      /> */}
       <LoginForm />
     </div>
   );

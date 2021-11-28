@@ -50,17 +50,19 @@ export const LoginForm = (props) => {
   return (
     <div className="login-form">
       <Grid container>
-        <Grid item md={6} sm={12} lg={6}>
-          <Paper>
-            <form onSubmit={handleSubmit}>
-              UserName:
-              <input type="text" />
-              Password:
-              <input type="text" />
-              <button type="submit">submit</button>
-            </form>
-          </Paper>
-        </Grid>
+        {false && (
+          <Grid item md={6} sm={12} lg={6}>
+            <Paper>
+              <form onSubmit={handleSubmit}>
+                UserName:
+                <input type="text" />
+                Password:
+                <input type="text" />
+                <button type="submit">submit</button>
+              </form>
+            </Paper>
+          </Grid>
+        )}
 
         <Grid item md={6} sm={12} lg={6} xs={12}>
           <Card>
