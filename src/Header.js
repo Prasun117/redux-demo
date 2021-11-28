@@ -1,14 +1,13 @@
 import React from "react";
 import { Login } from "./Login";
-import { Logout } from "./Logout";
+import { LogOut } from "./Logout";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../store/store";
 export const Header = (props) => {
   const isAuthenticted = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
   const handleLogin = () => {
-    dispatch(authActions.loginIn());
-    console.log(isAuthenticted);
+    dispatch(authActions.logIn());
   };
   const handleLogout = () => {
     dispatch(authActions.logOut());
@@ -16,17 +15,8 @@ export const Header = (props) => {
   return (
     <div className="top-header">
       <div className="heading">Welocome to Demo</div>
-      {!isAuthenticted && (
-        <div>
-          <Login handleLogin={handleLogin} />
-        </div>
-      )}
-      {isAuthenticted && (
-        <div>
-          <Logout handleLogout={handleLogout} />{" "}
-        </div>
-      )}
-      <div>Welocome to Demo</div>
+      {!isAuthenticted && <Login handleLogin={handleLogin} />}
+      {isAuthenticted && <LogOut handleLogout={handleLogout} />}
     </div>
   );
 };

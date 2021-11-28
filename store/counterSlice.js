@@ -5,10 +5,10 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     increment(state) {
-      state.counter = state.counter + 1;
+      if (state.counter < 100) state.counter = state.counter + 1;
     },
     decrement(state) {
-      state.counter = state.decrement - 1;
+      if (state.counter > 0) state.counter = state.counter - 1;
     },
     increase(state, action) {
       state.counter = state.counter + action.payload;

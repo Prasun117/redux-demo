@@ -4,10 +4,23 @@ import { counterActions } from "../store/store";
 import { CounterComponent } from "./CounterComponent";
 import { Header } from "./Header";
 export default function App() {
+  const counter = useSelector((state) => state.counter.counter);
+
+  const dispatch = useDispatch();
+  const handleIncrement = () => {
+    dispatch(counterActions.increment());
+  };
+  const handleDecrement = () => {
+    dispatch(counterActions.decrement());
+  };
   return (
     <div className="App">
-      <span>welcomne to the demo</span>
-      <CounterComponent />
+      <Header />
+      <CounterComponent
+        counter={counter}
+        increment={handleIncrement}
+        decrement={handleDecrement}
+      />
     </div>
   );
 }
