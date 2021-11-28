@@ -1,0 +1,99 @@
+.App {
+  font-family: sans-serif;
+}
+
+.button-counter {
+  font-size: 20px;
+
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  border: 2px solid;
+  color: #ffffff;
+  border: 3px solid grey;
+  box-shadow: 0px 2px 3px 3px rgb(8, 8, 8);
+  background: rgb(72, 72, 92);
+  border-radius: 20px;
+}
+.button-counter:hover {
+  box-shadow: 0px 4px 4px 4px rgb(8, 8, 8);
+}
+
+.button-counter:active {
+  background: blue;
+}
+
+.primary {
+  background: rgb(82, 204, 82);
+}
+
+.secondary {
+  background: rgb(68, 115, 218);
+}
+
+.warning {
+  background: #ec563b;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 20px;
+}
+.top-header {
+  position: relative;
+  top: 0 vh;
+  margin: 0px 0px 10px 0px;
+  width: auto;
+  height: 3rem;
+
+  text-align: center;
+  background-color: #38a7b6;
+}
+.top-header .heading {
+  position: absolute;
+  top: 10px;
+  left: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+.top-header .items {
+  position: absolute;
+  top: 10px;
+}
+.login-button {
+  background-color: #38a7b6;
+  font-size: 15px;
+  border: 0px solid;
+
+  font-weight: bold;
+  color: white;
+
+  width: 4rem;
+  height: 3rem;
+}
+.login-button:hover {
+  background-color: #267d88;
+  box-shadow: 1px 1px 3px 2px grey;
+}
+
+.button-logout {
+  position: absolute;
+  width: 4rem;
+  height: 3rem;
+  font-size: 15px;
+  border: 0px solid;
+  background-color: #38a7b6;
+  font-weight: bold;
+  color: white;
+
+  right: 2rem;
+  top: 0px;
+}
+.button-logout:hover {
+  background-color: #267d88;
+  box-shadow: 1px 1px 3px 2px grey;
+}
