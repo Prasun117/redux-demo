@@ -3,6 +3,7 @@ import { Login } from "./Login";
 import { LogOut } from "./Logout";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "./store/store";
+
 export const Header = (props) => {
   const isAuthenticted = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();

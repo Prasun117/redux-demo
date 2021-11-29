@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { counterActions } from "./store/store";
 import { CounterComponent } from "./CounterComponent";
 import { Header } from "./Header";
+import { AddToCart } from "./AddToCart";
 import { LoginForm } from "./LogInForm";
 export default function App() {
   const counter = useSelector((state) => state.counter.counter);
@@ -23,6 +24,7 @@ export default function App() {
         decrement={handleDecrement}
       /> */}
       <LoginForm />
+      <AddToCart></AddToCart>
     </div>
   );
 }

@@ -63,6 +63,7 @@ export const LoginForm = (props) => {
             </Paper>
           </Grid>
         )}
+        <Grid item xs={0} md={6} lg={6} sm={0}></Grid>
 
         <Grid item md={6} sm={12} lg={6} xs={12}>
           <Card>
